@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deck Pricing Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="calculator">
+        <h1>Deck Pricing Calculator</h1>
+        <label>Deck Size (sq ft):</label>
+        <input type="number" id="deckSize" placeholder="Enter size in sq ft">
+        
+        <label>Material Cost per sq ft:</label>
+        <input type="number" id="materialCost" placeholder="Enter cost per sq ft">
+
+        <label>Labor Rate per Hour:</label>
+        <input type="number" id="laborRate" placeholder="Enter hourly rate">
+
+        <label>Hours per 100 sq ft:</label>
+        <input type="number" id="hoursPer100" placeholder="Enter hours per 100 sq ft">
+
+        <label>Overhead Cost:</label>
+        <input type="number" id="overheadCost" placeholder="Enter overhead cost">
+
+        <label>Profit Margin (%):</label>
+        <input type="number" id="profitMargin" placeholder="Enter profit margin">
+
+        <button onclick="calculatePrice()">Calculate Price</button>
+
+        <h2>Total Price: $<span id="totalPrice">0.00</span></h2>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
